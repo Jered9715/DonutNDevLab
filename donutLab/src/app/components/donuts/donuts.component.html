@@ -1,0 +1,18 @@
+<div class='donuts-container'>
+    <h2>Donuts!</h2>
+    <div *ngIf="donuts">
+        <ul class="donuts-list">
+            <li *ngFor="let results of donuts.results" class="donuts-item">
+                
+                <img [src]="results.photo" alt="{{results.name}}" class="donut-image">
+                <div class="donuts-reference">
+                    <h3>{{results.name}}</h3>
+                    <a [href]="results.photo_attribution">{{results.photo_attribution}}</a>
+                </div>
+
+
+            </li>
+
+        </ul>
+
+    </div>

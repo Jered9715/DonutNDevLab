@@ -1,0 +1,30 @@
+.donuts-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.donuts-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.donuts-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.donuts-item{
+display: flex;
+margin-bottom: 20px;
+border-bottom: 1px solid #ddd;
+padding-bottom: 10px;
+}
+
+.donut-image{
+    max-width: 150px;
+    max-height: 100px;
+    margin-right: 20px;
+    border-radius: 4px;
+    object-fit: cover;
+}

@@ -1,0 +1,32 @@
+<div class="halloffame-container">
+<h2>Hall of Fame!</h2>
+    <div *ngIf="hallOfFame">
+       
+        <ul class ="hallOfFame-list">
+            <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Innovation</th>
+                <th>Year</th>
+            </tr>
+                <li *ngFor="let complete of hallOfFame.complete" class="hallOfFame-item">
+            <div class="hallOfFame-data">        
+                <tr>
+                   <td>{{complete.firstName}}</td> 
+                   <td>{{complete.lastName}}</td> 
+                   <td>{{complete.innovation}}</td> 
+                   <td>{{complete.year}}</td> 
+                </tr>
+
+            </div>
+            </li>
+
+            </table>
+
+
+        </ul>
+    
+    </div>
+    
+</div>
